@@ -1,0 +1,18 @@
+[toolchain]
+anchor_version = "1.0.2"
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+solana_vote = "4qVHFhpSY7eZ54AFG8i4XUA9FA9rLTyLCj2ht4Vgp4jx"
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
